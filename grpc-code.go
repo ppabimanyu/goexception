@@ -2,7 +2,7 @@ package goexception
 
 func (e *Exception) GetGRPCCode() int32 {
 	switch e.code {
-	case InvalidArgumentCode, InvalidInputDataCode:
+	case InvalidArgumentCode, InvalidParameterCode, InvalidDataCode:
 		return 3
 	case NotFoundCode:
 		return 5

@@ -2,7 +2,7 @@ package goexception
 
 func (e *Exception) GetHttpCode() int {
 	switch e.code {
-	case InvalidArgumentCode, InvalidInputDataCode:
+	case InvalidArgumentCode, InvalidParameterCode, InvalidDataCode:
 		return 400
 	case NotFoundCode:
 		return 404

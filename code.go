@@ -3,6 +3,7 @@ package goexception
 type Code string
 
 const (
+	// Deprecated: Use InvalidParameterCode instead
 	InvalidArgumentCode  Code = "INVALID_ARGUMENT"
 	InvalidParameterCode Code = "INVALID_PARAMETER"
 	InvalidDataCode      Code = "INVALID_DATA"
