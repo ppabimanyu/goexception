@@ -4,7 +4,8 @@ type Code string
 
 const (
 	InvalidArgumentCode  Code = "INVALID_ARGUMENT"
-	InvalidInputDataCode Code = "INVALID_INPUT_DATA"
+	InvalidParameterCode Code = "INVALID_PARAMETER"
+	InvalidDataCode      Code = "INVALID_DATA"
 	NotFoundCode         Code = "NOT_FOUND"
 	AlreadyExistsCode    Code = "ALREADY_EXISTS"
 	PermissionDeniedCode Code = "PERMISSION_DENIED"

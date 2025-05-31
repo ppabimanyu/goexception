@@ -1,13 +1,22 @@
 package goexception
 
 // InvalidArgument creates a new Exception with the InvalidArgumentCode error code.
+//
+// Deprecated: Use InvalidParameter instead.
 func InvalidArgument(message string, errs ...any) *Exception {
 	return _createException(InvalidArgumentCode, message, errs...)
 }
 
-// InvalidInputData creates a new Exception with the InvalidInputDataCode error code.
-func InvalidInputData(message string, errs ...any) *Exception {
-	return _createException(InvalidInputDataCode, message, errs...)
+// InvalidParameter creates a new Exception with the InvalidParameterCode error code.
+// To be used when a parameter is invalid or does not meet the required criteria.
+func InvalidParameter(message string, errs ...any) *Exception {
+	return _createException(InvalidParameterCode, message, errs...)
+}
+
+// InvalidData creates a new Exception with the InvalidDataCode error code.
+// To be used when the provided data is not valid.
+func InvalidData(message string, errs ...any) *Exception {
+	return _createException(InvalidDataCode, message, errs...)
 }
 
 // NotFound creates a new Exception with the NotFoundCode error code.
